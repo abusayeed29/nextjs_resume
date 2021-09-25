@@ -1,0 +1,13 @@
+Extension:
+    Tailwind CSS IntelliSense 
+    ES7 React/Redux/GraphQL/React-Native snippets
+    _rfce
+    _rafce
+
+Created Next Config file
+    next.config.js in root  then server restart
+    module.exports ={
+        images:{
+            domains: ["links.paparect.com"],
+        },
+    };
