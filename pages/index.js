@@ -10,41 +10,43 @@ import Footer from '../components/Footer';
 
 export default function Home() {
 
-    const[resumeData, setResumeData] = useState({});
 
-    useEffect(()=>{
+    const [resumeData, setResumeData] = useState({});
+    useEffect(() => {
         fetch("resumeData.json")
-        .then((res) => res.json())
-        .then((data) => {
-            //console.log(data);
-            setResumeData(data);
-        });
+            .then((res) => res.json())
+            .then((data) => {
+                //console.log(data);
+                setResumeData(data);
+            });
     }, []);
 
     return (
-        <div className="">
+        <>
             <Head>
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {/* Header */}
-            <Header data = {resumeData.main}/>
-            {/* About */}
-            <About/>
-            {/* Resume */}
-            <Resume/>
-            {/* Portfolio */}
-            <Portfolio/>
-            {/* Testimonial */}
-            <Testimonial/>
-            {/* Contact */}
-            <Contact/>
-            {/* Footer */}
-            <Footer/>
+            <main >
+                {/* Header */}
+                <Header data = {resumeData.main}/>
+                {/* About */}
+                <About />
+                {/* Resume */}
+                <Resume />
+                {/* Portfolio */}
+                <Portfolio />
+                {/* Testimonial */}
+                <Testimonial />
+                {/* Contact */}
+                <Contact />
+                {/* Footer */}
+                <Footer />
+            </main>
 
             <h1>Lets Builld NEXT APP</h1>
 
-        </div>
+        </>
     )
 }

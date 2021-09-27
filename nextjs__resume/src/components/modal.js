@@ -4,7 +4,7 @@ import { useState, useContext } from "react";
 import styles from "../styles/modal.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import { timeout } from "./helpers";
+import { timeout } from "../components/helpers";
 import emailjs from "emailjs-com";
 import { buttonDisabled } from "../styles/spinningWheel.module.css";
 import SpinningWheel from "../components/spinningWheel";
