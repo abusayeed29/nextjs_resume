@@ -20,7 +20,7 @@ const Header = ({ data }) => {
     }
 
     return (
-        <header className="sticky top-0 z-50 bg-white shadow-md">
+        <header className="sticky top-0 z-50 bg-white shadow-md" id="home">
             
             <NavBar/>
             <div className="row banner">
