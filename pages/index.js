@@ -7,6 +7,7 @@ import Portfolio from '../components/Portfolio';
 import Testimonial from '../components/Testimonial';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Banner from '../components/Banner';
 
 export default function Home() {
 
@@ -24,13 +25,14 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Create Next App</title>
+                <title>Sayeedinfo.com | Md. Abu Sayeed </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main >
-                {/* Header */}
-                <Header data = {resumeData.main}/>
+            {/* Header */}
+            <Header data = {resumeData.main}/>
+            <Banner data = {resumeData.main} />
+            <main>
                 {/* About */}
                 <About />
                 {/* Resume */}

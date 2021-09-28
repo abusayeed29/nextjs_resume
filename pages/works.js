@@ -1,10 +1,14 @@
+import Head from 'next/head'
 import Header from "../components/Header"
-import NavBar from "../components/sections/NavBar"
 
 const works = () => {
     return (
         <div>
-            <NavBar/>
+            <Head>
+                <title>sayeedinfo.com | portfolio</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <Header/>
             <h1>Works Page</h1>
         </div>
     )
