@@ -51,21 +51,21 @@ function Banner({ data }) {
                     objectFit="contain"/>  */}
             </div>
 
-            <div className="font-dosis w-full md:w-3/5 text-center md:text-left ">
+            <div className="font-dosis w-full md:w-4/5 text-center md:text-left ">
 
-                <h1 className="responsive-headline text-white text-6xl">
-                    <Typewriter
+                <h1 className="responsive-headline text-white text-5xl flex">
+                     <Typewriter
                         options={{
-                            strings: ['ABU SAYEED', 'FULL STACK DEVELOPER'],
+                            strings: ['Full Stack Developer', ''],
                             autoStart: true,
                             loop: true,
                         }}
                     />
                 </h1>
-                <h3 className="text-gray-400">
+                <h3 className="text-gray-400 mt-2">
                     Based in {city}. <span className="text-white">{occupation}</span>. {description}.
                     </h3>
-                <hr />
+               
                 <ul className="social">{networks}</ul>
                 <button className="text-purple-500 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">I'm flexible</button>
             </div>

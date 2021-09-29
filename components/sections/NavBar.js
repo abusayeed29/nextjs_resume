@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from 'next/link';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink} from 'react-scroll';
 
 const NavBar = () => {
 
@@ -53,17 +53,17 @@ const NavBar = () => {
                         }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
                     >
                     <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-                        <ScrollLink to='home' smooth={true} key="home">
+                        <ScrollLink to='home' spy={true} activeClass="active" offset={50} duration={500} smooth={true} key="home">
                             <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
                                 Home
                             </span>
                         </ScrollLink>
-                        <ScrollLink to='about' smooth={true} key="about">
+                        <ScrollLink to='about' activeClass="active" offset={50} duration={500} smooth={true} key="about">
                             <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
                                 About
                             </span>
                         </ScrollLink>
-                        <ScrollLink to='resume' smooth={true} key="resume">
+                        <ScrollLink to='resume' activeClass="active" offset={50} duration={500} smooth={true} key="resume">
                             <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
                                 Resume
                             </span>
@@ -73,16 +73,16 @@ const NavBar = () => {
                                 Works
                             </a>
                         </Link>
-                        <Link href='#testimonial'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                        <ScrollLink to='testimonial' smooth={true} key="testimonial">
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
                                 Testimonials
-                            </a>
-                        </Link>
-                        <Link href='#contact'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
-                                Contact
-                            </a>
-                        </Link>
+                            </span>
+                        </ScrollLink>
+                        <ScrollLink to='Contact' smooth={true} key="Contact">
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
+                            Contact
+                            </span>
+                        </ScrollLink>
                     </div>
                 </div>
             </nav>
