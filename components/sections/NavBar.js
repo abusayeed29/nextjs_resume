@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 
 const NavBar = () => {
 
@@ -27,7 +28,7 @@ const NavBar = () => {
                     </a>
                 </Link>
                 <button
-                    className=' inline-flex p-3 hover:bg-gray-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+                    className='inline-flex p-3 hover:bg-gray-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
                     onClick={handleClick}
                 >
                     <svg
@@ -52,32 +53,32 @@ const NavBar = () => {
                         }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
                     >
                     <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-                        <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white '>
+                        <ScrollLink to='home' smooth={true} key="home">
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
                                 Home
-                            </a>
-                        </Link>
-                        <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                            </span>
+                        </ScrollLink>
+                        <ScrollLink to='about' smooth={true} key="about">
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
                                 About
-                            </a>
-                        </Link>
-                        <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                            </span>
+                        </ScrollLink>
+                        <ScrollLink to='resume' smooth={true} key="resume">
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
                                 Resume
-                            </a>
-                        </Link>
+                            </span>
+                        </ScrollLink>
                         <Link href='/works'>
                             <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
                                 Works
                             </a>
                         </Link>
-                        <Link href='/'>
+                        <Link href='#testimonial'>
                             <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
                                 Testimonials
                             </a>
                         </Link>
-                        <Link href='/'>
+                        <Link href='#contact'>
                             <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
                                 Contact
                             </a>

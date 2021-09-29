@@ -29,7 +29,7 @@ function Banner({ data }) {
         <div 
             style={{ background: '#091C29',}}
             className="min-h-screen flex items-center justify-center"
-            id="header"
+            id="home"
         >
         {/* <Image
             src={profilePic}
