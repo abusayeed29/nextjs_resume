@@ -34,7 +34,7 @@ export default function Home() {
             <Banner data = {resumeData.main} />
             <main>
                 {/* About */}
-                <About />
+                <About data = {resumeData.main} />
                 {/* Resume */}
                 <Resume />
                 {/* Portfolio */}

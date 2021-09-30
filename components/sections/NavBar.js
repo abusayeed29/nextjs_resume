@@ -23,7 +23,7 @@ const NavBar = () => {
                             <path d='M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z' />
                         </svg>
                         <span className='text-xl text-white font-bold uppercase tracking-wide'>
-                            Talwind CSS
+                            Abu Sayeed
                         </span>
                     </a>
                 </Link>
@@ -53,36 +53,41 @@ const NavBar = () => {
                         }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
                     >
                     <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-                        <ScrollLink to='home' spy={true} activeClass="active" offset={50} duration={500} smooth={true} key="home">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
-                                Home
-                            </span>
-                        </ScrollLink>
-                        <ScrollLink to='about' activeClass="active" offset={50} duration={500} smooth={true} key="about">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
-                                About
-                            </span>
-                        </ScrollLink>
-                        <ScrollLink to='resume' activeClass="active" offset={50} duration={500} smooth={true} key="resume">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
-                                Resume
-                            </span>
-                        </ScrollLink>
-                        <Link href='/works'>
+                        <Link href='/'>
                             <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
-                                Works
+                                Home
                             </a>
                         </Link>
-                        <ScrollLink to='testimonial' smooth={true} key="testimonial">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
-                                Testimonials
-                            </span>
-                        </ScrollLink>
-                        <ScrollLink to='Contact' smooth={true} key="Contact">
+                        <Link href='/'>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                                About Me
+                            </a>
+                        </Link>
+                        <Link href='/resume'>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                                Resume
+                            </a>
+                        </Link>
+                        <Link href='/portfolio'>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                                Portfolio
+                            </a>
+                        </Link>
+                        <Link href='/blog'>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                                Blog
+                            </a>
+                        </Link>
+                        <Link href='/contact'>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                                contact
+                            </a>
+                        </Link>
+                        {/* <ScrollLink to='/contact' smooth={true} key="Contact">
                             <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer">
                             Contact
                             </span>
-                        </ScrollLink>
+                        </ScrollLink> */}
                     </div>
                 </div>
             </nav>
