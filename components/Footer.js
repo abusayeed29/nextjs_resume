@@ -1,8 +1,15 @@
 const Footer = () => {
     return (
-        <div>
-            <h1>I am footer</h1>
-        </div>
+        <section 
+            className="justify-center items-center py-24"
+            style={{
+            background: '#303030',
+            }}
+            id="resume" 
+        >
+            <div class="container mx-auto flex lg:flex-row sm:flex-row overflow-hidden md:justify-between">
+            </div>
+        </section>
     )
 }
 

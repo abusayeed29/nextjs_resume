@@ -23,26 +23,26 @@ const About = ({ data }) => {
 
     return (
         <section 
-            className="min-h-screen flex justify-center items-center flex-col"
+            className="justify-center items-center py-24"
             style={{
-            background: '#FEFEFE',
+            background: '#ebeeee',
             }}
             id="about" 
         >
-            <h1 className="text-3xl text-bookmark-blue">About Me</h1>
-
-            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 ">          
+        <div class="container mx-auto flex lg:flex-row sm:flex-row overflow-hidden md:justify-between">
+            <div className="relative items-center w-3/12 mr-10 overflow-hidden mb-2 border-8 border-white border-solid h-52 w-52 rounded-full shadow-xl">          
                 <Image src={profilePic}
                     layout="fill"
-                    objectFit="contain"
-                    className="rounded-2xl" />
+                    objectFit="cover"
+                    className="rounded-full h-24 w-24 flex items-center justify-center p-6 m-10" />
             </div>
             <div
-                className="transtion duration-2000 ease-in-out p-10 max-w-xl lg:max-w-3xl rounded-lg hidden md:block"
+                className="flex flex-col w-9/12 text-sm text-gray-800 ml-10"
             >
+                <h1 className="text-3xl text-bookmark-blue">About Me</h1>
                 
                 <p className="text-bookmark-grey mt-4">
-                    Lead developer with over 20 years’ experience in IT, with a track record of delivering high quality web applications for high profile brands such as Aviva, Santander, Barclays, HSBC, TSB, Marks and Spencer and First Direct.
+                    Lead developer with over 6 years’ experience in IT, with a track record of delivering high quality web applications for high profile brands such as Aviva, Santander, Barclays, HSBC, TSB, Marks and Spencer and First Direct.
                 </p>
                 <p className="text-bookmark-grey mt-4">
                     Experience as a team lead, managing technical deliveries, coaching junior developers and setting code quality standards.
@@ -50,7 +50,27 @@ const About = ({ data }) => {
                 <p className="text-bookmark-grey mt-4">
                     Great problem solver and extremely motivated to learn new skills and technologies.
                 </p>
+                <h2>Contact Details</h2>
+                <p className="address">
+                    <span>{name}</span>
+                    <br />
+                    <span>
+                    {street}
+                    <br />
+                    {city} {state}, {zip}
+                    </span>
+                    <br />
+                    <span>{phone}</span>
+                    <br />
+                    <span>{email}</span>
+                </p>
+                <p>
+                <a href={resumeDownload} className="button">
+                  <i className="fa fa-download"></i>Download Resume
+                </a>
+              </p>
             </div>
+        </div>
         </section>
     )
 }

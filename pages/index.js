@@ -47,8 +47,6 @@ export default function Home() {
                 <Footer />
             </main>
 
-            <h1>Lets Builld NEXT APP</h1>
-
         </>
     )
 }
