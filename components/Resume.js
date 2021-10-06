@@ -47,14 +47,27 @@ const Resume = ({data}) => {
                             <li>Service Virtualisation</li>
                         </ul>
                     </div>
+
+                    <div className="mb-5 pb-5 md:mb-10 md:pb-10">
+                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3">
+                            Interests
+                        </h2>
+                        <ul className="mt-2 grid grid-cols-1 gap-y-9" role="list">
+                            <li>Building Arcade machines</li>
+                            <li>Playing the guiter</li>
+                            <li>Drawing</li>
+                            <li>Volunteering</li>
+                            <li>Walking / Running</li>
+                        </ul>
+                    </div>
                     
                 </div>
                 <div className="lg:row-span-5 lg:col-span-8 lg:pl-8 lg:pb-0">
                     <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
-                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
-                                    Experience
-                            </h2>
-                            <ul className="mt-2 pl-4 md:pl-0" role="list">
+                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
+                                Experience
+                        </h2>
+                        <ul className="mt-2 pl-4 md:pl-0" role="list">
                                 <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
                                     <div className="font-bold"> Software Engineer</div>
                                     <div className="text-sm">Aviva, Norwich</div>
@@ -104,7 +117,53 @@ const Resume = ({data}) => {
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                    </div>
+
+                    <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
+                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
+                                Education
+                        </h2>
+                        <ul className="mt-2 pl-4 md:pl-0" role="list">
+                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
+                                    <div className="font-bold"> Khulna University</div>
+                                    <div className="text-sm">Electronics and Communication Engineering</div>
+                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
+                                </li>
+                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
+                                    <div className="font-bold"> Khulna University</div>
+                                    <div className="text-sm">Electronics and Communication Engineering</div>
+                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
+                                </li>
+                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
+                                    <div className="font-bold"> Khulna University</div>
+                                    <div className="text-sm">Electronics and Communication Engineering</div>
+                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
+                                </li>
+                            </ul>
+                    </div>
+
+                    <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
+                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
+                                Certification
+                        </h2>
+                        <ul className="mt-2 pl-4 md:pl-0" role="list">
+                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
+                                    <div className="font-bold"> Khulna University</div>
+                                    <div className="text-sm">Electronics and Communication Engineering</div>
+                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
+                                </li>
+                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
+                                    <div className="font-bold"> Khulna University</div>
+                                    <div className="text-sm">Electronics and Communication Engineering</div>
+                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
+                                </li>
+                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
+                                    <div className="font-bold"> Khulna University</div>
+                                    <div className="text-sm">Electronics and Communication Engineering</div>
+                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
+                                </li>
+                            </ul>
+                    </div>
 
                 </div>
                 
