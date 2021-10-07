@@ -6,22 +6,48 @@ const Portfolio = ({ data }) => {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "0px",
+        centerPadding: "60px",
         slidesToShow: 4,
         swipeToSlide: true,
-        speed: 500
-      };
+        speed: 500,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+
+    };
 
     if (data) {
         var projects = data.projects.map(function (projects) {
             var projectImage = "/img/portfolio/" + projects.image;
             return (
                 <div key={projects.title} className="cursor-pointer hover:scale-105 transform transition duration-200 ease-out overflow-hidden">
-                    <div className="h-80 w-80">
-                        <Image src={projectImage} alt={projects.title} width={300} height={300} className="rounded-xl" />
+                    <div className="h-100 w-80 p-5">
+                        <Image src={projectImage} alt={projects.title} width={300} height={200} className="rounded-xl" />
+                        <h3>{projects.title}</h3>
+                        <p>{projects.category}</p>
                     </div>
-                    <h3>{projects.title}</h3>
-                    <p>{projects.category}</p>
                 </div>
 
             );

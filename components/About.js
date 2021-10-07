@@ -29,7 +29,7 @@ const About = ({ data }) => {
             }}
             id="about" 
         >
-        <div class="container mx-auto flex lg:flex-row sm:flex-row overflow-hidden md:justify-between">
+        <div className="container mx-auto flex lg:flex-row sm:flex-row overflow-hidden md:justify-between">
             <div className="relative items-center w-3/12 mr-10 overflow-hidden mb-2 border-8 border-white border-solid h-52 w-52 rounded-full shadow-xl">          
                 <Image src={profilePic}
                     layout="fill"

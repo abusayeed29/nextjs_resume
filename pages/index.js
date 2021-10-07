@@ -25,7 +25,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Sayeedinfo.com | Md. Abu Sayeed </title>
+                <title>Sayeedinfo.com | Md. Abu Sayeed - portfolio </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -40,11 +40,11 @@ export default function Home() {
                 {/* Portfolio */}
                 <Portfolio data = {resumeData.portfolio} />
                 {/* Testimonial */}
-                <Testimonial />
+                <Testimonial data = {resumeData.testimonials}/>
                 {/* Contact */}
                 <Contact />
                 {/* Footer */}
-                <Footer />
+                <Footer data={resumeData.main}/>
             </main>
 
         </>

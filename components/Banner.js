@@ -56,7 +56,7 @@ function Banner({ data }) {
                 <h1 className="responsive-headline text-white text-5xl flex">
                      <Typewriter
                         options={{
-                            strings: ['Full Stack Developer', ''],
+                            strings: ['Full Stack Developer','React/React Native', 'Mern Stack Dev'],
                             autoStart: true,
                             loop: true,
                         }}

@@ -18,29 +18,24 @@
     "resumedownload": "http://papareact.com",
     "social": [
       {
-        "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA",
-        "className": "fa fa-youtube"
-      },
-      {
         "name": "facebook",
         "url": "https://www.facebook.com/sonny.sangha.3",
-        "className": "fa fa-facebook"
+        "className": "faFacebook"
       },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/saajansangha",
-        "className": "fa fa-linkedin"
+        "className": "faLinkedin"
       },
       {
         "name": "instagram",
         "url": "https://www.instagram.com/ssssangha/",
-        "className": "fa fa-instagram"
+        "className": "faInstagram"
       },
       {
         "name": "github",
         "url": "https://github.com/PapaReact",
-        "className": "fa fa-github"
+        "className": "faGithub"
       }
     ]
   },
@@ -135,11 +130,28 @@
     "testimonials": [
       {
         "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
-        "user": "Jorge Fouto"
+        "user": "Mo Ismail",
+        "deg":"CEO - Lynck"
       },
       {
         "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
-        "user": "Adam Curtis"
+        "user": "Adam Curtis",
+        "deg":"CEO - Lynck"
+      },
+      {
+        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "user": "Adam Curtis",
+        "deg":"CEO - Lynck"
+      },
+      {
+        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "user": "Adam Curtis",
+        "deg":"CEO - Lynck"
+      },
+      {
+        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "user": "Adam Curtis",
+        "deg":"CEO - Lynck"
       }
     ]
   }
