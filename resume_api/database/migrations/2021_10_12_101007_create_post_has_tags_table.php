@@ -15,6 +15,8 @@ class CreatePostHasTagsTable extends Migration
     {
         Schema::create('post_has_tags', function (Blueprint $table) {
             $table->id();
+            $table->integer('post_id')->nullable();
+            $table->integer('tag_id')->nullable();
             $table->timestamps();
         });
     }

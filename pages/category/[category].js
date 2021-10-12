@@ -2,11 +2,35 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Footer from '../../components/Footer';
 import { useRouter } from "next/dist/client/router";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 
 const category = ({category, name}) => {
 
-    // const router = useRouter();
+    const router = useRouter();
+
+    const tag = router.query.category;
+
+    const [posts, setPosts] = useState();
+
+    useEffect(async()=>{
+
+        async function fetchBlogPosts(){
+
+            const response = await axios.get("http://127.0.0.1:8000/api/category/React Native");
+
+            console.log(response);
+
+            setPosts(response.data)
+        }
+
+        fetchBlogPosts();
+
+
+        
+    }, []);
+
     // const { category } = router.query;
 
     // console.log(category);
@@ -25,7 +49,20 @@ const category = ({category, name}) => {
                         <span className="text-blue-800">Home -</span> Category / {category}
                     </div>
                 </section>
+                <div>
+                {
+                    posts && posts.map( (post, index) => {
+                    
+                     return <div>   
+                            <h2>{post.title}</h2>
+                            <p> Posted on {post.publish_daate}</p>
+                        </div>
 
+                    })
+                
+                }
+                </div>
+                
                 <Footer />
             </main>
 
