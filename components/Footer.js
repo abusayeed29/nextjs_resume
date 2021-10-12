@@ -26,7 +26,7 @@ const Footer = ({data}) => {
             }}
             id="resume" 
         >
-            <div class="container mx-auto flex lg:flex-col sm:flex-col overflow-hidden md:justify-between">
+            <div className="container mx-auto flex lg:flex-col sm:flex-col overflow-hidden md:justify-between">
                     <div className="w-50 flex m-auto text-center text-white">
                         <FontAwesomeIcon icon={faFacebook} size="xs" className="w-7 m-3 cursor-pointer hover:scale-105 transform transition duration-200 ease-out"/>
                         <FontAwesomeIcon icon={faGithub} size="xs" className="w-7 m-3 cursor-pointer hover:scale-105 transform transition duration-200 ease-out"/>

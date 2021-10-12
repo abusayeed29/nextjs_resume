@@ -11,3 +11,7 @@ Created Next Config file
             domains: ["links.paparect.com"],
         },
     };
+
+
+=> nextjs data fetching
+    https://nextjs.org/docs/basic-features/data-fetching

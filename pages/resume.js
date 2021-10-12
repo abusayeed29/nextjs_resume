@@ -2,6 +2,8 @@ import Head from "next/head"
 import { useState, useEffect } from 'react'
 import Header from "../components/Header"
 import Footer from '../components/Footer';
+import Portfolio from '../components/Portfolio';
+import Resume from "../components/Resume";
 
 
 const resume = () => {
@@ -31,9 +33,8 @@ const resume = () => {
                     </div>
                 </section>
 
-                <section className="flex-grow pt-28 py-28 text-center">
-                <h1>Resume Page</h1>
-                </section>
+                <Resume/>
+                <Portfolio data = {resumeData.portfolio} />
 
                 <Footer data={resumeData.main}/>
             </main>
