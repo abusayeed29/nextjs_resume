@@ -23,7 +23,7 @@ Route::get('/category/{tag}', function($tag){
 
     return Post::query()
             ->select([
-                'posts.title', 'posts.slug', 'posts.created_at as publish_date','tags.name'
+                'posts.title', 'posts.slug', 'posts.created_at as publish_date','tags.name as tag_name'
             ])
             ->join('post_has_tags', 'post_has_tags.post_id', '=', 'posts.id')
             ->join('tags','tags.id', '=', 'post_has_tags.tag_id')
@@ -31,5 +31,25 @@ Route::get('/category/{tag}', function($tag){
             ->limit(10)
             ->orderByDesc('posts.id')
             ->get();
+
+});
+
+
+Route::get('/posts', function(){
+
+    return Post::query()
+            ->select([
+                'id','posts.title', 'posts.slug'
+            ])
+            ->orderByDesc('created_at')
+            ->get();
+
+});
+
+Route::get('/post/{slug}', function($slug){
+
+    return Post::query()
+            ->where('slug', $slug)
+            ->first();
 
 });

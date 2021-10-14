@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 
 const category = ({category, name}) => {
@@ -18,7 +19,9 @@ const category = ({category, name}) => {
 
         async function fetchBlogPosts(){
 
-            const response = await axios.get("http://127.0.0.1:8000/api/category/React Native");
+            const response = await axios.get(
+                `http://127.0.0.1:8001/api/category/${tag}`
+            );
 
             console.log(response);
 
@@ -53,10 +56,16 @@ const category = ({category, name}) => {
                 {
                     posts && posts.map( (post, index) => {
                     
-                     return <div>   
-                            <h2>{post.title}</h2>
-                            <p> Posted on {post.publish_daate}</p>
+                     return (
+                        <div key={index}>  
+                            <Link href={`/blog/articles/${post.slug}`}>
+                                <h2>{post.title}</h2>
+                            </Link> 
+                            
+                            <p> Posted on {post.publish_date}</p>
+                            <p> Tag:  {post.tag_name}</p>
                         </div>
+                     );
 
                     })
                 
@@ -72,12 +81,12 @@ const category = ({category, name}) => {
 
 export async function getStaticPaths() {
     const paths = [
-        { params: { category: "web" } },
-        { params: { category: "travel" } }
+        { params: { category: "travel" } },
+        { params: { category: "ReactJs" } }
     ];
 
 
-    return { paths, fallback: false};
+    return { paths, fallback: true};
 
 }
 
