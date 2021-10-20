@@ -39,9 +39,9 @@ Route::get('/posts', function(){
 
     return Post::query()
             ->select([
-                'id','posts.title', 'posts.slug'
+                'posts.id','posts.title', 'posts.slug', 'posts.body', 'posts.created_at as publish_date'
             ])
-            ->orderByDesc('created_at')
+            ->orderByDesc('publish_date')
             ->get();
 
 });

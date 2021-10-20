@@ -1,10 +1,12 @@
 import Head from "next/head"
+import axios from "axios";
+import Link from "next/link";
 import { useState, useEffect } from 'react'
 import Header from "../components/Header"
 import Footer from '../components/Footer';
 
 
-const blog = () => {
+const blog = ({posts}) => {
 
     const [resumeData, setResumeData] = useState({});
     useEffect(() => {
@@ -16,7 +18,6 @@ const blog = () => {
             });
     }, []);
 
-
     return (
         <div>
             <Head>
@@ -25,91 +26,64 @@ const blog = () => {
             </Head>
             <Header/>
             <main>
-                <section class="text-center bg-gradient-to-r from-gray-200 to-gray-300 py-20">
-                    <h1 class="mb-2 text-2xl font-bold text-gray-700 lg:text-4xl mt-10 ">Blog </h1>
-                    <div class="text-white">
-                        <span class="text-blue-800">Home -</span> Blog
+                <section className="text-center bg-gradient-to-r from-gray-200 to-gray-300 py-20">
+                    <h1 className="mb-2 text-2xl font-bold text-gray-700 lg:text-4xl mt-10 ">Blog </h1>
+                    <div className="text-white">
+                        <span className="text-blue-800">Home -</span> Blog
                     </div>
                 </section>
 
-                <section class="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 grid lg:grid-cols-4 py-20">
-                    <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
-                        <img class="w-full h-48"
-                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="product" />
-                        <div class="px-6 py-4">
-                            <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">This is the title</h4>
-                            <p class="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                                elit.
-                                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
+                <section className="container mx-auto px-6 gap-12 pt-12 pb-24 py-20">
+                    <div className="grid grid-cols-3 gap-4">
+                        <div className="col-span-2">
+                        {
+                            posts && posts.map( (post, index) => {
+                                return(
+                                    <div key={index} className="max-w-3xl mx-4 mb-10 rounded-lg shadow-lg">
+                                        <img className="w-full h-52 md:h-64 lg:h-96 xl:h-64 object-cover"
+                                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                                            alt="product" />
+                                        <div className="bg-gray-50 p-8">
+                                            <div className="text-xs text-gray-600 uppercase font-semibold">23 Sep 2020</div>
+                                            <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                                                <Link href={`/blog/articles/${post.slug}`}>
+                                                    <a className="text-gray-900 dark:text-gray-100">{post.title}</a>
+                                                </Link>
+                                            </h2>
+                                            <p className="leading-normal text-gray-700">{post.body}</p>
+                                            
+                                            <div>
+                                                {
+                                                    post.post_has_tags && post.post_has_tags.map((tag, i) => {
+
+                                                        return (
+                                                            <p class= "leading-normal text-gray-700" key={i}>{tag.tag.name}</p>
+                                                        )
+
+                                                    })
+                                                }
+                                            </div>
+                                            <Link href={`/blog/articles/${post.slug}`}>
+                                                <a className="flex items-center mt-6 uppercase text-sm text-black font-semibold">Read article <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 5l7 7-7 7"></path></svg></a>
+                                            </Link>
+                                            
+                                        </div>
+                                    </div>
+                                )
+                            })
+
+                        }
+                        </div>
+                        <div className="">
+                            {
+                                posts && posts.map( (post, index) => {
+                                <p>{post.tag_name}</p>
+                                })
+                            }
                         </div>
                     </div>
-                    <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
-                        <img class="w-full h-48"
-                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="product" />
-                        <div class="px-6 py-4">
-                            <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">This is the title</h4>
-                            <p class="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                                elit.
-                                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-                        </div>
-                    </div>
-                    <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
-                        <img class="w-full h-48"
-                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="product" />
-                        <div class="px-6 py-4">
-                            <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">This is the title</h4>
-                            <p class="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                                elit.
-                                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-                        </div>
-                    </div>
-                    <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
-                        <img class="w-full h-48"
-                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="product" />
-                        <div class="px-6 py-4">
-                            <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">This is the title</h4>
-                            <p class="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                                elit.
-                                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-                        </div>
-                    </div>
-                    <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
-                        <img class="w-full h-48"
-                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="product" />
-                        <div class="px-6 py-4">
-                            <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">This is the title</h4>
-                            <p class="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                                elit.
-                                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-                        </div>
-                    </div>
-                    <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
-                        <img class="w-full h-48"
-                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="product" />
-                        <div class="px-6 py-4">
-                            <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">This is the title</h4>
-                            <p class="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                                elit.
-                                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-                        </div>
-                    </div>
-                    <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
-                        <img class="w-full h-48"
-                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="product" />
-                        <div class="px-6 py-4">
-                            <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">This is the title</h4>
-                            <p class="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                                elit.
-                                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-                        </div>
-                    </div>
+                
+                    
                 </section>
 
                 <Footer data={resumeData.main}/>
@@ -118,6 +92,19 @@ const blog = () => {
             
         </div>
     )
+}
+
+export async function getStaticProps(context){
+
+    const response = await axios.get(
+        `http://127.0.0.1:8001/api/posts`
+    );
+
+    const posts = response.data;
+
+    return {
+        props: { posts: posts },
+    }
 }
 
 export default blog

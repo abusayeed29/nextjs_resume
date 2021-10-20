@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class PostHasTag extends Model
 {
     use HasFactory;
+
+    protected $with = ['tag'];
+    
+    public function tag(){
+
+        return $this->belongsTo(Tag::class, 'tag_id', 'id');
+
+    }
 }
