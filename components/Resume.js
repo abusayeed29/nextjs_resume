@@ -29,144 +29,187 @@ const Resume = ({data}) => {
             }}
             id="resume" 
         >
-            <div className="grid gird-cols-1 lg:grid-cols-12">
-                <div className="col-span-4">
-                    <div className="mb-5 pb-5 md:mb-10 md:pb-10">
-                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3">
-                            Skills
-                        </h2>
-                        <ul className="mt-2 grid grid-cols-1 gap-y-9 md:grid-cols-2" role="list">
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>JQuery</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>C#</li>
-                            <li>.NET MVC</li>
-                            <li>Service Virtualisation</li>
-                        </ul>
-                    </div>
+            <div className="container">
+                <div className="grid gird-cols-1 lg:grid-cols-12">
+                    <div className="col-span-4">
+                        <div className="mb-5 pb-5 md:mb-10 md:pb-10">
+                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3  pl-2">
+                                Skills
+                            </h2>
+                            <ul className="mt-2 grid grid-cols-1 gap-y-9 md:grid-cols-2  pl-2" role="list">
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Next.js</li>
+                                <li>JQuery</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>C#</li>
+                                <li>.NET MVC</li>
+                                <li>Service Virtualisation</li>
+                            </ul>
+                        </div>
 
-                    <div className="mb-5 pb-5 md:mb-10 md:pb-10">
-                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3">
-                            Interests
-                        </h2>
-                        <ul className="mt-2 grid grid-cols-1 gap-y-9" role="list">
-                            <li>Building Arcade machines</li>
-                            <li>Playing the guiter</li>
-                            <li>Drawing</li>
-                            <li>Volunteering</li>
-                            <li>Walking / Running</li>
-                        </ul>
+                        <div className="mb-5 pb-5 md:mb-10 md:pb-10">
+                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 pl-2">
+                                Interests
+                            </h2>
+                            <ul className="mt-2 grid grid-cols-1 gap-y-9  pl-2" role="list">
+                                <li>Building Arcade machines</li>
+                                <li>Playing the guiter</li>
+                                <li>Drawing</li>
+                                <li>Volunteering</li>
+                                <li>Walking / Running</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div className="lg:row-span-5 lg:col-span-8 lg:pl-8 lg:pb-0">
+                        <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
+                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
+                                    Experience
+                            </h2>
+                            <ul className="mt-2 pl-4 md:pl-0" role="list">
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                        <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block"></span>
+                                        <div className="font-bold"> Sr. Full Stack Developer</div>
+                                        <div className="text-sm">Navana Group - Dhaka</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> Feb 2018 - Present</span></div>
+                                        <div className="text-sm leading-7">
+                                            <dl className="">
+                                                <dt id=""> Responsiblities </dt>
+                                                <dd role="defination" aria-labelledby=""
+                                                className="ml-7 pb-0 list-item list-disc"> Designed and developed in-house web applications and websites for popular brands using PHP, Laravel, CodeIgniter, ReactJs</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                className="ml-7 pb-0 list-item list-disc"> Developed in-house apllications (Frontned and backend) eg. Navana Portal, Ticketing System, Leave Approval System.</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                className="ml-7 pb-0 list-item list-disc"> Developed online attendence system using React Native</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                className="ml-7 pb-0 list-item list-disc"> Providing leadership as a subject matter expert (SME) on hosting issues, client and staff logins, and general upfrades/maintenance of servers</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                className="ml-7 pb-0 list-item list-disc"> Project Management tools Git, Github, Bitbucket, Trello, Source Tree</dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                        <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block"></span>
+                                        <div className="font-bold"> Software Engineer</div>
+                                        <div className="text-sm">Eicra Soft Ltd. - Dhaka</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> Nov 2017 - Jan 2018</span></div>
+                                        <div className="text-sm leading-7">
+                                            <dl className="">
+                                                <dt id="">
+                                                    Responsiblities
+                                                </dt>
+                                                <dd role="defination" aria-labelledby=""
+                                                className="ml-7 pb-0 list-item list-disc"> Customized existing web application (B2B)</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                className="ml-7 pb-0 list-item list-disc"> Applications development using Kendo UI, Zend framework and tested all applications with Selenium</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                className="ml-7 pb-0 list-item list-disc"> Project Management tools SVN, Git, Bitbucket</dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                        {/* <i class=""></i> */}
+                                        <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold">Full Stack Web Developer</div>
+                                        <div className="text-sm">ItShift INC. - Dhaka</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> Sept 2015 - Oct 2017</span></div>
+                                        <div className="text-sm leading-7">
+                                            <dl className="">
+                                                <dt id="">
+                                                    Responsiblities
+                                                </dt>
+                                                <dd role="defination" aria-labelledby=""
+                                                    className="ml-7 pb-0 list-item list-disc"> Successfully generated back-end programming untilizing PHP, MySql, CodeIgniter</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                    className="ml-7 pb-0 list-item list-disc"> Job Portal Web Application development with CodeIgniter</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                    className="ml-7 pb-0 list-item list-disc"> Research, design and implement best practice solutions to new problems</dd>
+                                                <dd role="defination" aria-labelledby=""
+                                                    className="ml-7 pb-0 list-item list-disc"> WordPress theme development and customization</dd>
+
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                        {/* <i class=""></i> */}
+                                        <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold">Full Stack Web Developer (Remote)</div>
+                                        <div className="text-sm">Lynck.com - Providence, RI, US</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> Jun 2012 - Aug 2015</span></div>
+                                        <div className="text-sm leading-7">
+                                            <dl className="">
+                                                <dt id="">
+                                                    Responsiblities
+                                                </dt>
+                                                <dd role="defination" aria-labelledby="{id}"
+                                                className="ml-7 pb-0 list-item list-disc"> Development of multithreaded application that interfaced with payment gateway</dd>
+                                                <dd role="defination" aria-labelledby="{id}"
+                                                className="ml-7 pb-0 list-item list-disc"> Full lifecycle development using HTML5/CSS3, Bootstrap, JavaScript, PHP, Laravel, WordPress.</dd>
+                                                <dd role="defination" aria-labelledby="{id}"
+                                                className="ml-7 pb-0 list-item list-disc"> Created e-commerce sites intgrated with Paypal, Stripe and other Payment APIs</dd>
+
+                                            </dl>
+                                        </div>
+                                    </li>
+                                </ul>
+                        </div>
+
+                        <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
+                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
+                                    Education
+                            </h2>
+                            <ul className="mt-2 pl-4 md:pl-0" role="list">
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold">BSc in Electronics and Communication Engineering</div>
+                                        <div className="text-sm">Khulna University - Khulna, West Bengal</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> September 2009 to July 2014 </span></div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold"> H.S.C </div>
+                                        <div className="text-sm">Keshabpur College - Keshabpur, West Bengal</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> September 2005 to July 2007 </span></div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold"> S.S.C </div>
+                                        <div className="text-sm">Sagardary High School - Keshabpur, West Bengal</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> July 2005 </span></div>
+                                    </li>
+                                </ul>
+                        </div>
+
+                        <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
+                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
+                                Training and Certification
+                            </h2>
+                            <ul className="mt-2 pl-4 md:pl-0" role="list">
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold">Marketing SEO Expert Certification form Bdjobs (SEIP).</div>
+                                        <div className="text-sm">BITM</div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold"> Google Cloud Certified (Udemy)</div>
+                                        <div className="text-sm">Udemy</div>
+
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                        <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold"> Zero Budget Marketing System for Any Business Certification.</div>
+                                        <div className="text-sm">Udemy</div>
+            
+                                    </li>
+                                </ul>
+                        </div>
+
                     </div>
                     
                 </div>
-                <div className="lg:row-span-5 lg:col-span-8 lg:pl-8 lg:pb-0">
-                    <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
-                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
-                                Experience
-                        </h2>
-                        <ul className="mt-2 pl-4 md:pl-0" role="list">
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    <div className="font-bold"> Software Engineer</div>
-                                    <div className="text-sm">Aviva, Norwich</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> Apr 2012 -Oct 2017</span></div>
-                                    <div className="text-sm leading-7">
-                                        <dl className="">
-                                            <dt id="">
-                                                Responsiblities
-                                            </dt>
-                                            <dd role="defination" aria-labelledby="{id}"
-                                            className="ml-7 pb-2 list-item list-disc"> Application Depelment for Barclays and TSB (Aviva's External Banking Partners)</dd>
-                                        </dl>
-                                    </div>
-                                </li>
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    <div className="font-bold"> Software Engineer</div>
-                                    <div className="text-sm">Aviva, Norwich</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> Apr 2012 -Oct 2017</span></div>
-                                    <div className="text-sm leading-7">
-                                        <dl className="">
-                                            <dt id="">
-                                                Responsiblities
-                                            </dt>
-                                            <dd role="defination" aria-labelledby="{id}"
-                                            className="ml-7 pb-2 list-item list-disc"> Application Depelment for Barclays and TSB (Aviva's External Banking Partners)</dd>
-                                        </dl>
-                                    </div>
-                                </li>
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    {/* <i class=""></i> */}
-                                    <FontAwesomeIcon icon="fas fa-circle"  className="absolute -left-2.5 h-5 w-5 text-blue-500 border-4 rounded-fill border-white transition-all duration-500 timeline-circle"/>
-                                    <div className="font-bold"> Software Engineer</div>
-                                    <div className="text-sm">Aviva, Norwich</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> Apr 2012 -Oct 2017</span></div>
-                                    <div className="text-sm leading-7">
-                                        <dl className="">
-                                            <dt id="">
-                                                Responsiblities
-                                            </dt>
-                                            <dd role="defination" aria-labelledby="{id}"
-                                            className="ml-7 pb-2 list-item list-disc"> Application Depelment for Barclays and TSB (Aviva's External Banking Partners)</dd>
-                                            <dd role="defination" aria-labelledby="{id}"
-                                            className="ml-7 pb-2 list-item list-disc"> Application Depelment for Barclays and TSB (Aviva's External Banking Partners)</dd>
-                                            <dd role="defination" aria-labelledby="{id}"
-                                            className="ml-7 pb-2 list-item list-disc"> Application Depelment for Barclays and TSB (Aviva's External Banking Partners)</dd>
-                                        </dl>
-                                    </div>
-                                </li>
-                            </ul>
-                    </div>
-
-                    <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
-                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
-                                Education
-                        </h2>
-                        <ul className="mt-2 pl-4 md:pl-0" role="list">
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    <div className="font-bold"> Khulna University</div>
-                                    <div className="text-sm">Electronics and Communication Engineering</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
-                                </li>
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    <div className="font-bold"> Khulna University</div>
-                                    <div className="text-sm">Electronics and Communication Engineering</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
-                                </li>
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    <div className="font-bold"> Khulna University</div>
-                                    <div className="text-sm">Electronics and Communication Engineering</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
-                                </li>
-                            </ul>
-                    </div>
-
-                    <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
-                        <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
-                                Certification
-                        </h2>
-                        <ul className="mt-2 pl-4 md:pl-0" role="list">
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    <div className="font-bold"> Khulna University</div>
-                                    <div className="text-sm">Electronics and Communication Engineering</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
-                                </li>
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    <div className="font-bold"> Khulna University</div>
-                                    <div className="text-sm">Electronics and Communication Engineering</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
-                                </li>
-                                <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-14">
-                                    <div className="font-bold"> Khulna University</div>
-                                    <div className="text-sm">Electronics and Communication Engineering</div>
-                                    <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> 2009-2015</span></div>
-                                </li>
-                            </ul>
-                    </div>
-
-                </div>
-                
             </div>
         
         </section>
