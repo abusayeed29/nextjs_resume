@@ -31,12 +31,12 @@ const Resume = ({data}) => {
         >
             <div className="container">
                 <div className="grid gird-cols-1 lg:grid-cols-12">
-                    <div className="col-span-4">
-                        <div className="mb-5 pb-5 md:mb-10 md:pb-10">
+                    <div className="col-span-5">
+                        {/* <div className="mb-5 pb-5 md:mb-10 md:pb-10">
                             <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3  pl-2">
                                 Skills
                             </h2>
-                            <ul className="mt-2 grid grid-cols-1 gap-y-9 md:grid-cols-2  pl-2" role="list">
+                            <ul className="mt-2 grid grid-cols-1 gap-y-9 md:grid-cols-2 pl-2" role="list">
                                 <li>JavaScript</li>
                                 <li>React</li>
                                 <li>Next.js</li>
@@ -47,23 +47,61 @@ const Resume = ({data}) => {
                                 <li>.NET MVC</li>
                                 <li>Service Virtualisation</li>
                             </ul>
+                        </div> */}
+                        
+                        <div className="mb-5 pb-5 md:mb-10 md:pb-10">
+                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
+                                    Education
+                            </h2>
+                            <ul className="mt-2 pl-4 md:pl-0" role="list">
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold">BSc in Electronics and Communication Engineering</div>
+                                        <div className="text-sm">Khulna University - Khulna, West Bengal</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> September 2009 to July 2014 </span></div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold"> H.S.C </div>
+                                        <div className="text-sm">Keshabpur College - Keshabpur, West Bengal</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> September 2005 to July 2007 </span></div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold"> S.S.C </div>
+                                        <div className="text-sm">Sagardary High School - Keshabpur, West Bengal</div>
+                                        <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> July 2005 </span></div>
+                                    </li>
+                            </ul>
                         </div>
 
                         <div className="mb-5 pb-5 md:mb-10 md:pb-10">
-                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 pl-2">
-                                Interests
+                            <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
+                                Training and Certification
                             </h2>
-                            <ul className="mt-2 grid grid-cols-1 gap-y-9  pl-2" role="list">
-                                <li>Building Arcade machines</li>
-                                <li>Playing the guiter</li>
-                                <li>Drawing</li>
-                                <li>Volunteering</li>
-                                <li>Walking / Running</li>
+                            <ul className="mt-2 pl-4 md:pl-0" role="list">
+                                    <li className="relative pl-8 md:ml-10 lg:ml-5 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold">Marketing SEO Expert Certification form Bdjobs (SEIP).</div>
+                                        <div className="text-sm">BITM</div>
+                                    </li>
+                                    <li className="relative pl-8 md:ml-10 lg:ml-5 border-l border-solid border-gray-200 pb-10">
+                                    <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold"> Google Cloud Certified (Udemy)</div>
+                                        <div className="text-sm">Udemy</div>
+
+                                    </li>
+                                    <li className="relative pl-8 md:ml-10 lg:ml-5 border-l border-solid border-gray-200 pb-10">
+                                        <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
+                                        <div className="font-bold"> Zero Budget Marketing System for Any Business Certification.</div>
+                                        <div className="text-sm">Udemy</div>
+            
+                                    </li>
                             </ul>
                         </div>
                         
                     </div>
-                    <div className="lg:row-span-5 lg:col-span-8 lg:pl-8 lg:pb-0">
+                    <div className="lg:row-span-5 lg:col-span-7 lg:pl-8 lg:pb-0">
                         <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
                             <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
                                     Experience
@@ -156,7 +194,7 @@ const Resume = ({data}) => {
                                 </ul>
                         </div>
 
-                        <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
+                        {/* <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
                             <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
                                     Education
                             </h2>
@@ -179,10 +217,10 @@ const Resume = ({data}) => {
                                         <div className="text-sm">Sagardary High School - Keshabpur, West Bengal</div>
                                         <div className="flex ga-x-0.5 md:inline-block md:text-right md:absolute md:top-0 pr-5 md:w-24 md:-left-24 lg:w-44 lg:w-44 lg:-left-44"><span> July 2005 </span></div>
                                     </li>
-                                </ul>
-                        </div>
+                            </ul>
+                        </div> */}
 
-                        <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
+                        {/* <div className="mb-5 pb-5 md:mb-10 md:pb-10 col-span-4">
                             <h2 className="mb-6 font-bold bg-gray-100 rounded-r-full text-2xl py-3 lg:rounded-r-none lg:rounded-l-full lg:pl-8">
                                 Training and Certification
                             </h2>
@@ -204,12 +242,63 @@ const Resume = ({data}) => {
                                         <div className="text-sm">Udemy</div>
             
                                     </li>
-                                </ul>
-                        </div>
+                            </ul>
+                        </div> */}
 
                     </div>
                     
                 </div>
+
+                <div class="grid lg:grid-cols-4 gap-10">
+                    <div class="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
+                        <h6 className="font-bold">FRONT-END</h6>
+                        <ul class="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
+                            <li>JavaScript</li>
+                            <li>ReactJs</li>
+                            <li>NextJs</li>
+                            <li>React Native</li>
+                            <li>TypeScript</li>
+                            <li>Bootstrap</li>
+                            <li>Material UI</li>
+                            <li>Tailwindcss</li>
+                        </ul>
+                    </div>
+                    <div class="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
+                        <h6 className="font-bold">BACK-END</h6>
+                        <ul class="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
+                            <li>Php</li>
+                            <li>Laravel</li>
+                            <li>NodeJs</li>
+                            <li>WordPress</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+
+                    <div class="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
+                        <h6 className="font-bold">DATABASE</h6>
+                        <ul class="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
+                            <li>MySql</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Oracle</li>
+                        </ul>
+                    </div>
+
+                    <div class="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
+                        <h6 className="font-bold">SOURCE CONTROLL</h6>
+                        <ul class="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>BitBucket</li>
+                            <li>Jira</li>
+                            <li>Trello</li>
+                            <li>Sourcetree</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
             </div>
         
         </section>

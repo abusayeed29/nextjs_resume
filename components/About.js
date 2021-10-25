@@ -50,7 +50,7 @@ const About = ({ data }) => {
                 <p className="text-bookmark-grey mt-4">
                     Great problem solver and extremely motivated to learn new skills and technologies.
                 </p>
-                <h2>Contact Details</h2>
+                <h2 className="text-lg font-2xl mt-5">Contact Details</h2>
                 <p className="address">
                     <span>{name}</span>
                     <br />
