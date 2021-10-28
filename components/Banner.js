@@ -2,9 +2,11 @@ import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 import profilePic from '../public/img/pro-bg.jpg';
-import photoImg from '../public/img/photo.jpg';
+import photoImg from '../public/img/photo.png';
 
 function Banner({ data }) {
 
@@ -45,29 +47,33 @@ function Banner({ data }) {
                     effect="blur"
                     placeholderSrc=""
                 />
-                {/* <Image
+                {/* <div className="relative w-3/12 h-100 overflow-hidden">
+                <Image
                     src={photoImg}
                     layout="fill"
-                    objectFit="contain"/>  */}
+                    objectFit="contain"/> 
+                </div> */}
             </div>
 
             <div className="font-dosis w-full md:w-4/5 text-center md:text-left ">
-
-                <h1 className="responsive-headline text-white text-5xl flex">
+                <h1 className="responsive-headline text-white text-6xl font-bold flex mb-2">I'm Abu Sayeed</h1>
+                <h2 className="responsive-headline text-white text-6xl flex">
                      <Typewriter
                         options={{
-                            strings: ['Full Stack Developer','React/React Native', 'Mern Stack Dev'],
+                            strings: ['Full Stack Developer.','React/React Native.', 'Mern Stack Dev.'],
                             autoStart: true,
                             loop: true,
                         }}
                     />
-                </h1>
-                <h3 className="text-gray-400 mt-2">
+                </h2>
+                <h3 className="text-gray-400 mt-5">
                     Based in {city}. <span className="text-white">{occupation}</span>. {description}.
-                    </h3>
+                </h3>
                
                 <ul className="social">{networks}</ul>
-                <button className="text-purple-500 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">Download Resume</button>
+                <button className="mt-7 text-gray-500 bg-white px-5 py-2 shadow-md rounded-full font-sm my-3            hover:shadow-xl active:scale-90 transition duration-150 hover:bg-red-500 hover:text-white"> 
+                    <FontAwesomeIcon className="mx-1 w-5 font-light float-left" icon={faDownload}/> Download Resume
+                </button>
             </div>
         </div>
         </div >

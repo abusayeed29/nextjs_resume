@@ -52,12 +52,13 @@ const blog = ({posts}) => {
                                             </h2>
                                             <p className="leading-normal text-gray-700">{post.body}</p>
                                             
-                                            <div>
+                                            <div className="flex space-x-2 mt-5">
                                                 {
                                                     post.post_has_tags && post.post_has_tags.map((tag, i) => {
 
                                                         return (
-                                                            <p class= "leading-normal text-gray-700" key={i}>{tag.tag.name}</p>
+                                                            
+                                                            <div class= "text-xs px-3 bg-gray-200 text-gray-800 rounded-full" key={i}>{tag.tag.name}</div>
                                                         )
 
                                                     })

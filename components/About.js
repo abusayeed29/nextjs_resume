@@ -2,6 +2,9 @@
 import Image from 'next/image';
 import useWindowPosition from '../hook/useWindowPosition';
 import profilePic from '../public/img/profilepic.jpg';
+import profilesyd from '../public/img/sayeed-pic.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const About = ({ data }) => {
 
@@ -29,12 +32,12 @@ const About = ({ data }) => {
             }}
             id="about" 
         >
-        <div className="container mx-auto flex lg:flex-row sm:flex-row overflow-hidden md:justify-between">
-            <div className="relative items-center w-3/12 mr-10 overflow-hidden mb-2 border-8 border-white border-solid h-52 w-52 rounded-full shadow-xl">          
-                <Image src={profilePic}
+        <div className="container mx-auto flex lg:flex-row flex-col overflow-hidden md:justify-between">
+            <div className="mx-auto relative w-3/12 overflow-hidden mb-2 border-8 border-white border-solid h-52 w-52 rounded-full shadow-xl">          
+                <Image src={profilesyd}
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-full h-24 w-24 flex items-center justify-center p-6 m-10" />
+                    className="rounded-full h-24 w-24 flex items-center justify-center p-8 m-10" />
             </div>
             <div
                 className="flex flex-col w-9/12 text-sm text-gray-800 ml-10"
@@ -51,24 +54,26 @@ const About = ({ data }) => {
                     Great problem solver and extremely motivated to learn new skills and technologies.
                 </p>
                 <h2 className="text-lg font-2xl mt-5">Contact Details</h2>
-                <p className="address">
-                    <span>{name}</span>
-                    <br />
-                    <span>
-                    {street}
-                    <br />
-                    {city} {state}, {zip}
-                    </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                </p>
-                <p>
-                <a href={resumeDownload} className="button">
-                  <i className="fa fa-download"></i>Download Resume
-                </a>
-              </p>
+                <div className="flex lg:flex-row gap-10 flex-col">
+                    
+                    <p className="address">
+                        <span>{name}</span>
+                        <br />
+                        <span>
+                        {street}
+                        <br />
+                        {city} {state}, {zip}
+                        </span>
+                        <br />
+                        <span>{phone}</span>
+                        <br />
+                        <span>{email}</span>
+                    </p>
+                    <button className="h-10 mt-7 text-gray-500 bg-white px-5 shadow-md rounded-full font-sm my-3 hover:shadow-xl active:scale-90 transition duration-150 hover:bg-red-500 hover:text-white"> 
+                        <FontAwesomeIcon className="mx-1 w-5 font-light float-left" icon={faDownload}/> Download Resume
+                    </button>
+            
+              </div>
             </div>
         </div>
         </section>
