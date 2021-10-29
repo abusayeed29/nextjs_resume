@@ -11,8 +11,8 @@ const NavBar = () => {
     };
 
     return (
-        <div>
-            <nav className='flex items-center flex-wrap bg-gray-900 p-3 '>
+        <div className="container mx-auto">
+            <nav className='flex items-center flex-wrap p-3'>
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4 '>
                         <svg
