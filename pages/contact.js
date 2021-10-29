@@ -1,13 +1,15 @@
 import Head from "next/head"
 import Header from "../components/Header"
 import Footer from '../components/Footer';
+import ContactForm from "../components/sections/ContactForm";
+
 
 
 const contact = () => {
     return (
         <div>
             <Head>
-                <title>sayeedinfo.com | contact</title>
+                <title>Sayeedinfo.com | contact</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header/>
@@ -19,8 +21,9 @@ const contact = () => {
                     </div>
                 </section>
 
-                <section className="flex-grow pt-28 py-28 text-center">
-                <h1>Contact Page</h1>
+                <section className="flex-grow container mx-auto py-20">
+                    
+                    <ContactForm/>
                 </section>
 
                 <Footer/>
