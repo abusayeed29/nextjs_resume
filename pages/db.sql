@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Oct 21, 2021 at 12:02 PM
+-- Generation Time: Oct 30, 2021 at 12:04 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -66,7 +66,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (29, '2021_10_12_100923_create_posts_table', 1),
 (30, '2021_10_12_100944_create_tags_table', 1),
 (31, '2021_10_12_101007_create_post_has_tags_table', 1),
-(32, '2021_10_12_101111_create_files_table', 1);
+(32, '2021_10_12_101111_create_files_table', 1),
+(34, '2021_10_30_104618_create_projects_table', 2);
 
 -- --------------------------------------------------------
 
@@ -151,6 +152,41 @@ INSERT INTO `post_has_tags` (`id`, `post_id`, `tag_id`, `created_at`, `updated_a
 (2, 2, 1, NULL, NULL),
 (3, 2, 2, NULL, NULL),
 (4, 2, 3, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `projects`
+--
+
+CREATE TABLE `projects` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `category` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pdefault.png',
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `projects`
+--
+
+INSERT INTO `projects` (`id`, `title`, `category`, `body`, `image`, `url`, `created_at`, `updated_at`) VALUES
+(1, 'Job portal Web Application', NULL, 'Bootstrap, CodeIgniter', 'pdefault.png', 'https://globalturn.dk/', '2021-10-12 11:13:32', '2021-10-10 11:13:54'),
+(2, 'Muslims Daiting Web Application', NULL, 'Bootstrap, Laravel', 'pdefault.png', 'https://meetmuslims.net/', '2021-10-11 11:14:00', '2021-10-11 11:14:03'),
+(3, 'Business Website', NULL, 'Bootstrap, ReactJs, WordPress, Laravel', 'pdefault.png', 'https://meetmuslims.net/', '2021-10-12 11:14:06', '2021-10-12 11:14:09'),
+(4, 'Ecommerce Website', NULL, 'Bootstrap, WordPress, Paypal', 'pdefault.png', 'https://meetmuslims.net/', '2021-10-13 11:14:12', '2021-10-13 11:14:16'),
+(5, 'Intranet Portal', NULL, 'Bootstrap, Ajax, MySQL, Laravel,\r\nLeave Approval System, Employee Help Desk.', 'pdefault.png', 'https://meetmuslims.net/', '2021-10-14 11:14:20', '2021-10-14 11:14:25'),
+(6, 'Real Estate Website', NULL, 'Bootstrap, Ajax, MySQL, Laravel, CodeIgniter', 'pdefault.png', 'https://navana-realestate.com.net/', '2021-10-15 11:14:34', '2021-10-15 11:14:37'),
+(7, 'Doctor Appointment Booking Management System', NULL, 'Bootstrap, Ajax, MySQL, Laravel', 'pdefault.png', 'https://onlinedoctorsbd.com/', '2021-10-16 11:14:42', '2021-10-16 11:14:46'),
+(8, 'Amazon Clone ', NULL, 'Tailwindcss, ReactJs, Firbase', 'pdefault.png', 'https://onlinedoctorsbd.com/', '2021-10-17 11:14:50', '2021-10-17 11:14:53'),
+(9, 'Airbnb Clone ', NULL, 'Tailwindcss, NextJs, Firbase', 'pdefault.png', 'https://onlinedoctorsbd.com/', '2021-10-18 11:14:56', '2021-10-18 11:14:59'),
+(10, 'Uber Clone -React Native', NULL, 'Tailwindcss, React Native, Firbase', 'pdefault.png', 'https://onlinedoctorsbd.com/', '2021-10-19 11:15:02', '2021-10-19 11:15:06'),
+(11, 'Personal Resume Website', NULL, 'Tailwindcss, React Native, Firbase', 'pdefault.png', 'https://onlinedoctorsbd.com/', '2021-10-20 11:15:09', '2021-10-20 11:15:12'),
+(12, 'Quiz Application', NULL, 'Tailwindcss, ReactJs, Laravel, Rest Api, MySQL', 'pdefault.png', 'https://sayeedinfo.com/', '2021-10-21 11:15:15', '2021-10-21 11:15:23');
 
 -- --------------------------------------------------------
 
@@ -243,6 +279,12 @@ ALTER TABLE `post_has_tags`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `projects`
+--
+ALTER TABLE `projects`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tags`
 --
 ALTER TABLE `tags`
@@ -275,7 +317,7 @@ ALTER TABLE `files`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -294,6 +336,12 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `post_has_tags`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `projects`
+--
+ALTER TABLE `projects`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tags`

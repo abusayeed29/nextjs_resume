@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import Link from 'next/link';
 import { Link as ScrollLink} from 'react-scroll';
+import { useRouter } from 'next/router'
 
 const NavBar = () => {
-
+    const router = useRouter();
+    console.log(router.asPath);
+    const [mounted, setMounted] = useState(false);
     const [active, setActive] = useState(false);
 
     const handleClick = () => {
@@ -54,32 +57,57 @@ const NavBar = () => {
                     >
                     <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
-                                Home
-                            </a>
-                        </Link>
-                        <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                            <a className=
+                                {`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white ${
+                                    router.asPath === "/"
+                                    ? "text-red-500 dark:text-gray-400"
+                                    : "text-white"
+                                }`}
+                            >
                                 About Me
                             </a>
                         </Link>
                         <Link href='/resume'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                            <a className=
+                                {`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white ${
+                                    router.asPath === "/resume"
+                                    ? "text-red-500 dark:text-gray-400"
+                                    : "text-white"
+                                }`}
+                            >
                                 Resume
                             </a>
                         </Link>
                         <Link href='/portfolio'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                            <a className=
+                                {`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white ${
+                                    router.asPath === "/portfolio"
+                                    ? "text-red-500 dark:text-gray-400"
+                                    : "text-white"
+                                }`}
+                            >
                                 Portfolio
                             </a>
                         </Link>
                         <Link href='/blog'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                            <a className=
+                                {`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white ${
+                                    router.asPath === "/blog"
+                                    ? "text-red-500 dark:text-gray-400"
+                                    : "text-white"
+                                }`}
+                            >
                                 Blog
                             </a>
                         </Link>
                         <Link href='/contact'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                            <a className=
+                                {`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white ${
+                                    router.asPath === "/contact"
+                                    ? "text-red-500 dark:text-gray-400"
+                                    : "text-white"
+                                }`}
+                            >
                                 Contact
                             </a>
                         </Link>

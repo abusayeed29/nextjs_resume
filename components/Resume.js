@@ -148,7 +148,7 @@ const Resume = ({data}) => {
                                         </div>
                                     </li>
                                     <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
-                                        {/* <i class=""></i> */}
+                                        {/* <i className=""></i> */}
                                         <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
                                         <div className="font-bold">Full Stack Web Developer</div>
                                         <div className="text-sm">ItShift INC. - Dhaka</div>
@@ -171,7 +171,7 @@ const Resume = ({data}) => {
                                         </div>
                                     </li>
                                     <li className="relative pl-8 md:ml-32 lg:ml-52 border-l border-solid border-gray-200 pb-10">
-                                        {/* <i class=""></i> */}
+                                        {/* <i className=""></i> */}
                                         <span className="border-2 border-grey-40 rounded-full w-4 h-4 absolute -left-2 top-1 bg-white hidden md:block transition-all duration-500"></span>
                                         <div className="font-bold">Full Stack Web Developer (Remote)</div>
                                         <div className="text-sm">Lynck.com - Providence, RI, US</div>
@@ -249,10 +249,10 @@ const Resume = ({data}) => {
                     
                 </div>
 
-                <div class="grid lg:grid-cols-4 gap-10">
-                    <div class="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
+                <div className="grid lg:grid-cols-4 gap-10">
+                    <div className="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
                         <h6 className="font-bold">FRONT-END</h6>
-                        <ul class="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
+                        <ul className="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
                             <li>JavaScript</li>
                             <li>ReactJs</li>
                             <li>NextJs</li>
@@ -263,9 +263,9 @@ const Resume = ({data}) => {
                             <li>Tailwindcss</li>
                         </ul>
                     </div>
-                    <div class="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
+                    <div className="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
                         <h6 className="font-bold">BACK-END</h6>
-                        <ul class="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
+                        <ul className="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
                             <li>Php</li>
                             <li>Laravel</li>
                             <li>NodeJs</li>
@@ -274,9 +274,9 @@ const Resume = ({data}) => {
                         </ul>
                     </div>
 
-                    <div class="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
+                    <div className="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
                         <h6 className="font-bold">DATABASE</h6>
-                        <ul class="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
+                        <ul className="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
                             <li>MySql</li>
                             <li>PostgreSQL</li>
                             <li>MongoDB</li>
@@ -284,9 +284,9 @@ const Resume = ({data}) => {
                         </ul>
                     </div>
 
-                    <div class="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
+                    <div className="shadow bg-white rounded-lg p-6 transition duration-200 ease-in-out transform hover:shadow-lg">
                         <h6 className="font-bold">SOURCE CONTROLL</h6>
-                        <ul class="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
+                        <ul className="list-disc ml-5 mt-3 text-gray-700 text-sm leading-6">
                             <li>Git</li>
                             <li>GitHub</li>
                             <li>BitBucket</li>

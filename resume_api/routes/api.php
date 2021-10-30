@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Post;
+use App\Models\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -51,5 +52,12 @@ Route::get('/post/{slug}', function($slug){
     return Post::query()
             ->where('slug', $slug)
             ->first();
+
+});
+
+
+Route::get('/projects', function(){
+
+    return Project::all();
 
 });
