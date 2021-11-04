@@ -38,7 +38,7 @@ export default function Home() {
                 {/* Resume */}
                 <Resume />
                 {/* Portfolio */}
-                <Portfolio data = {resumeData.portfolio} />
+                <Portfolio/>
                 {/* Testimonial */}
                 <Testimonial data = {resumeData.testimonials}/>
                 {/* Contact */}

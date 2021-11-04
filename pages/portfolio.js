@@ -45,11 +45,11 @@ const portfolio = ({ projects }) => {
 
                     {projects && projects.map((project, index) => {
                         return (
-                            <a href="#" className="w-full block shadow-2xl">
+                            <a key={index} href={project.url} target="_blank" className="w-full block shadow-2xl">
                                 <div class="relative overflow-hidden">
                                     <div className="h-72 object-cover">
                                         <img 
-                                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                                            src={"https://sayeedinfo.com/uploads/images/"+project.image}
                                             alt="portfolio" 
                                             class="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
                                         />

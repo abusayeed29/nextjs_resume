@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['links.papareact.com'],
+    domains: ['sayeedinfo.com'],
   },
   devIndicators: {
     autoPrerender: false,

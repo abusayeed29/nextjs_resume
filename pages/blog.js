@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 const blog = ({posts}) => {
 
     const [resumeData, setResumeData] = useState({});
+    
     useEffect(() => {
         fetch("resumeData.json")
             .then((res) => res.json())

@@ -58,6 +58,6 @@ Route::get('/post/{slug}', function($slug){
 
 Route::get('/projects', function(){
 
-    return Project::all();
+    return Project::orderBy('id', 'DESC')->get();
 
 });

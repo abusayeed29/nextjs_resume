@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 const NavBar = () => {
     const router = useRouter();
-    console.log(router.asPath);
+    //console.log(router.asPath);
     const [mounted, setMounted] = useState(false);
     const [active, setActive] = useState(false);
 
