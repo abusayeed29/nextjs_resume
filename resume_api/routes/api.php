@@ -57,7 +57,13 @@ Route::get('/post/{slug}', function($slug){
 
 
 Route::get('/projects', function(){
-
     return Project::orderBy('id', 'DESC')->get();
+
+});
+
+
+Route::post('/contact/store', function(){
+    
+    dd($_POST);
 
 });

@@ -1,13 +1,23 @@
 import { useForm } from 'react-hook-form';
+import axios from "axios";
+import { useState } from 'react';
 
 function ContactForm() {
 
+    const [data, setData] = useState(null);
 
     const {register, handleSubmit, formState: { errors }, reset} = useForm();
     
     
     const onSubmitForm = (data) => {
+
         console.log(data);
+
+        axios.post(`http://127.0.0.1:8001/api/contact/store`, data)
+        .then((response) => {
+            //setData(response.data);
+        });
+
     };
     
 

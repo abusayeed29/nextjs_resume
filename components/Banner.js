@@ -39,11 +39,11 @@ function Banner({ data }) {
             objectFit="cover" /> */}
 
         <div className="flex flex-col items-center justify-center md:flex-row-reverse md:w-10/12 md:justify-between">
-            <div className="w-full md:w-2/5 ">
+            <div className="w-full md:w-1/4">
                 <LazyLoadImage
-                    src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
+                    src="https://sayeedinfo.com/uploads/images/sayeed10.png"
                     alt="profile"
-                    className={`w-full mx-auto`}
+                    className={`w-full mx-auto rounded-full items-center justify-center bg-white border border-gray-100 shadow-sm`}
                     effect="blur"
                     placeholderSrc=""
                 />
@@ -55,7 +55,7 @@ function Banner({ data }) {
                 </div> */}
             </div>
 
-            <div className="font-dosis w-full md:w-4/5 text-center md:text-left ">
+            <div className="font-dosis w-full md:w-3/4 text-center md:text-left ">
                 <h1 className="responsive-headline text-white text-6xl font-bold flex mb-2">I'm Abu Sayeed</h1>
                 <h2 className="responsive-headline text-white text-6xl flex">
                      <Typewriter
