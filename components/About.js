@@ -3,13 +3,9 @@ import Image from 'next/image';
 import useWindowPosition from '../hook/useWindowPosition';
 import profilePic from '../public/img/profilepic.jpg';
 import profilesyd from '../public/img/sayeed-pic.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const About = ({ data }) => {
-
     const animated = useWindowPosition('header', 0.6);
-
     if (data) {
         var name = data.name;
         var profilepic = "img/" + data.image;
@@ -43,18 +39,15 @@ const About = ({ data }) => {
                 className="flex flex-col w-9/12 text-sm text-gray-800 ml-10"
             >
                 <h1 className="text-3xl text-bookmark-blue">About Me</h1>
-                
                 <p className="text-bookmark-grey mt-4">
-                    Lead developer with over 6 years’ experience in IT, with a track record of delivering high quality web applications for high profile brands such as Aviva, Santander, Barclays, HSBC, TSB, Marks and Spencer and First Direct.
+                    As a Full Stack Developer, I have the skills needed to both create a smooth, attractive user experience and a secure and scalable codebase.
                 </p>
                 <p className="text-bookmark-grey mt-4">
-                    Experience as a team lead, managing technical deliveries, coaching junior developers and setting code quality standards.
-                </p>
-                <p className="text-bookmark-grey mt-4">
-                    Great problem solver and extremely motivated to learn new skills and technologies.
+                    Experience as a team lead, managing technical deliveries, coaching junior developers and setting code quality standards. Great problem solver and extremely motivated to learn new skills and technologies.
                 </p>
                 <h2 className="text-lg font-2xl mt-5">Contact Details</h2>
-                <div className="flex lg:flex-row gap-10 flex-col">
+
+                <div className="flex">
                     
                     <p className="address">
                         <span>{name}</span>
@@ -69,11 +62,7 @@ const About = ({ data }) => {
                         <br />
                         <span>{email}</span>
                     </p>
-                    <button className="h-10 mt-7 text-gray-500 bg-white px-5 shadow-md rounded-full font-sm my-3 hover:shadow-xl active:scale-90 transition duration-150 hover:bg-red-500 hover:text-white"> 
-                        <FontAwesomeIcon className="mx-1 w-5 font-light float-left" icon={faDownload}/> Download Resume
-                    </button>
-            
-              </div>
+                </div>
             </div>
         </div>
         </section>

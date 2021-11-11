@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProjectController;
 use App\Models\Post;
 use App\Models\Project;
 use Illuminate\Http\Request;
@@ -61,9 +63,5 @@ Route::get('/projects', function(){
 
 });
 
+Route::post('/contact', [PageController::class, 'store']);
 
-Route::post('/contact/store', function(){
-    
-    dd($_POST);
-
-});

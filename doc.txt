@@ -15,3 +15,6 @@ Created Next Config file
 
 => nextjs data fetching
     https://nextjs.org/docs/basic-features/data-fetching
+
+=>Cors error
+    If you face Cors issue ofcourse you have to return something from your server response.

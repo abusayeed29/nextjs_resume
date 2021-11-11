@@ -2,11 +2,10 @@ import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 import profilePic from '../public/img/pro-bg.jpg';
 import photoImg from '../public/img/photo.png';
+import DownloadButton from "./sections/DownloadButton";
 
 function Banner({ data }) {
 
@@ -71,9 +70,8 @@ function Banner({ data }) {
                 </h3>
                
                 <ul className="social">{networks}</ul>
-                <button className="mt-7 text-gray-500 bg-white px-5 py-2 shadow-md rounded-full font-sm my-3            hover:shadow-xl active:scale-90 transition duration-150 hover:bg-red-500 hover:text-white"> 
-                    <FontAwesomeIcon className="mx-1 w-5 font-light float-left" icon={faDownload}/> Download Resume
-                </button>
+
+                <DownloadButton/>
             </div>
         </div>
         </div >
