@@ -29,7 +29,7 @@ function Banner({ data }) {
     return (
         <div 
             style={{ background: '#091C29',}}
-            className="min-h-screen flex items-center justify-center"
+            className="min-h-screen flex items-center justify-center px-3"
             id="home"
         >
         {/* <Image
@@ -42,7 +42,7 @@ function Banner({ data }) {
                 <LazyLoadImage
                     src="https://sayeedinfo.com/uploads/images/sayeed10.png"
                     alt="profile"
-                    className={`w-full mx-auto rounded-full items-center justify-center bg-white border border-gray-100 shadow-sm`}
+                    className={`w-1/2 lg:w-full mx-auto rounded-full items-center justify-center bg-white border border-gray-100 shadow-sm`}
                     effect="blur"
                     placeholderSrc=""
                 />
@@ -54,9 +54,9 @@ function Banner({ data }) {
                 </div> */}
             </div>
 
-            <div className="font-dosis w-full md:w-3/4 text-center md:text-left ">
-                <h1 className="responsive-headline text-white text-6xl font-bold flex mb-2">I'm Abu Sayeed</h1>
-                <h2 className="responsive-headline text-white text-6xl flex">
+            <div className="font-dosis w-full md:w-3/4 md:text-left">
+                <h1 className="responsive-headline text-white text-3xl lg:text-6xl font-bold flex mb-2 justify-center lg:justify-start">I'm Abu Sayeed</h1>
+                <h2 className="responsive-headline text-white text-3xl lg:text-6xl flex justify-center lg:justify-start">
                      <Typewriter
                         options={{
                             strings: ['Full Stack Developer.','React/React Native.', 'Mern Stack Dev.'],

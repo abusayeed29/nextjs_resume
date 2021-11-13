@@ -1,11 +1,11 @@
 
 import Image from 'next/image';
-import useWindowPosition from '../hook/useWindowPosition';
+
 import profilePic from '../public/img/profilepic.jpg';
 import profilesyd from '../public/img/sayeed-pic.png';
 
 const About = ({ data }) => {
-    const animated = useWindowPosition('header', 0.6);
+    
     if (data) {
         var name = data.name;
         var profilepic = "img/" + data.image;
@@ -29,11 +29,11 @@ const About = ({ data }) => {
             id="about" 
         >
         <div className="container mx-auto flex lg:flex-row flex-col overflow-hidden md:justify-between">
-            <div className="mx-auto relative w-3/12 overflow-hidden mb-2 border-8 border-white border-solid h-52 w-52 rounded-full shadow-xl">          
-                <Image src="https://sayeedinfo.com/uploads/images/sayeed.png"
+            <div className="relative mb-2 w-3/12 flex">          
+                <Image src="https://sayeedinfo.com/uploads/images/sayeed2.png"
                     layout="fill"
-                    objectFit="cover"
-                    className="rounded-full h-24 w-24 flex items-center justify-center p-8 m-10" />
+                    objectFit="contain"
+                    className="rounded-sm h-24 w-24 items-center justify-center p-8 m-10" />
             </div>
             <div
                 className="flex flex-col w-9/12 text-sm text-gray-800 ml-10"

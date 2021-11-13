@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import useWindowPosition from '../hook/useWindowPosition';
 import profilePic from '../public/img/profilepic.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
