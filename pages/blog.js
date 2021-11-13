@@ -8,17 +8,6 @@ import Footer from '../components/Footer';
 
 const blog = ({posts}) => {
 
-    const [resumeData, setResumeData] = useState({});
-    
-    useEffect(() => {
-        fetch("resumeData.json")
-            .then((res) => res.json())
-            .then((data) => {
-                //console.log(data);
-                setResumeData(data);
-            });
-    }, []);
-
     return (
         <div>
             <Head>
@@ -47,7 +36,7 @@ const blog = ({posts}) => {
                                         <div className="bg-gray-50 p-8">
                                             <div className="text-xs text-gray-600 uppercase font-semibold">23 Sep 2020</div>
                                             <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                                                <Link href={`/blog/articles/${post.slug}`}>
+                                                <Link href={`/blog/${post.slug}`}>
                                                     <a className="text-gray-900 dark:text-gray-100">{post.title}</a>
                                                 </Link>
                                             </h2>
@@ -65,7 +54,7 @@ const blog = ({posts}) => {
                                                     })
                                                 }
                                             </div>
-                                            <Link href={`/blog/articles/${post.slug}`}>
+                                            <Link href={`/blog/${post.slug}`}>
                                                 <a className="flex items-center mt-6 uppercase text-sm text-black font-semibold">Read article <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 5l7 7-7 7"></path></svg></a>
                                             </Link>
                                             
@@ -105,27 +94,7 @@ const blog = ({posts}) => {
                                         Well documented
                                         </p>
                                     </li>
-                                    <li className="flex items-start lg:col-span-1">
-                                        <div class="flex-shrink-0">
-                                            <svg class="h-5 w-5 text-teal-400" x-description="Heroicon name: check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                            </svg>
-                                        </div>
-                                        <p class="ml-3 text-base text-teal-700 font-medium">
-                                        Well documented
-                                        </p>
-                                    </li>
-                                    <li className="flex items-start lg:col-span-1">
-                                        <div class="flex-shrink-0">
-                                            <svg class="h-5 w-5 text-teal-400" x-description="Heroicon name: check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                            </svg>
-                                        </div>
-                                        <p class="ml-3 text-base text-teal-700 font-medium">
-                                        Well documented
-                                        </p>
-                                    </li>
-
+                                    
                                 </ul>
                             </div>
                         </aside>
@@ -134,7 +103,7 @@ const blog = ({posts}) => {
                     
                 </section>
 
-                <Footer data={resumeData.main}/>
+                <Footer/>
             </main>
             
             
