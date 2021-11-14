@@ -268,6 +268,7 @@ const Resume = ({data}) => {
                             <li>Php</li>
                             <li>Laravel</li>
                             <li>NodeJs</li>
+                            <li>Express.js</li>
                             <li>WordPress</li>
                             <li>Java</li>
                         </ul>
