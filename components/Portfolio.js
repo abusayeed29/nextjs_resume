@@ -16,15 +16,6 @@ const Portfolio = () => {
 
     }, []);
 
-    // useEffect(async () => {
-    //     const result = await axios(
-    //       'https://hn.algolia.com/api/v1/search?query=redux',
-    //     );
-
-    //     setData(result.data);
-    //   });
-
-
     const settings = {
         className: "center",
         centerMode: true,
