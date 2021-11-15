@@ -9,7 +9,7 @@ const Portfolio = () => {
 
     useEffect(async () => {
         const response = await axios.get(
-            `http://127.0.0.1:8001/api/projects`
+            `http://api.sayeedinfo.com/api/projects`
         );
 
         setData(response.data);
