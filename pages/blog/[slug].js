@@ -79,7 +79,7 @@ export default Post;
 // Specify dynamic routes to pre-render pages based on data.
 // The HTML is generated at build time and will be reused on each request.
 export async function getStaticPaths() {
-    const response = await axios.get("http://127.0.0.1:8001/api/posts");
+    const response = await axios.get("http://api.sayeedinfo.com/api/posts");
     const posts = response.data;
     let paths = [];
     posts.forEach((post) => {
@@ -94,7 +94,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(params) {
     const slug = params.params.slug;
     const response = await axios.get(
-        `http://127.0.0.1:8001/api/post/${slug}`
+        `http://api.sayeedinfo.com/api/post/${slug}`
     );
     const post = response.data
     return {

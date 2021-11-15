@@ -20,7 +20,7 @@ const category = ({category, name}) => {
         async function fetchBlogPosts(){
 
             const response = await axios.get(
-                `http://127.0.0.1:8001/api/category/${tag}`
+                `http://api.sayeedinfo.com/api/category/${tag}`
             );
 
             console.log(response);

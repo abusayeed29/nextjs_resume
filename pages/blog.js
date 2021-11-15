@@ -81,7 +81,7 @@ export default blog
 // Fetch data at build time
 export async function getStaticProps(context){
     const response = await axios.get(
-        `http://127.0.0.1:8001/api/posts`
+        `http://api.sayeedinfo.com/api/posts`
     );
     const posts = response.data;
     return {
