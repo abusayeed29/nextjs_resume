@@ -40,7 +40,7 @@ function Banner({ data }) {
         <div className="flex flex-col items-center justify-center md:flex-row-reverse md:w-10/12 md:justify-between">
             <div className="w-full md:w-1/4">
                 <LazyLoadImage
-                    src="https://sayeedinfo.com/uploads/images/sayeed10.png"
+                    src="https://api.sayeedinfo.com/uploads/images/sayeed1.png"
                     alt="profile"
                     className={`w-1/2 lg:w-full mx-auto rounded-full items-center justify-center bg-white border border-gray-100 shadow-sm`}
                     effect="blur"

@@ -30,7 +30,7 @@ const About = ({ data }) => {
         >
         <div className="container mx-auto flex lg:flex-row flex-col overflow-hidden md:justify-between">
             <div className="relative mb-2 w-3/12 flex">          
-                <Image src="https://sayeedinfo.com/uploads/images/sayeed2.png"
+                <Image src="https://api.sayeedinfo.com/uploads/images/sayeed2.png"
                     layout="fill"
                     objectFit="contain"
                     className="rounded-sm h-24 w-24 items-center justify-center p-8 m-10" />

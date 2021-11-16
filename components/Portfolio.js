@@ -9,11 +9,10 @@ const Portfolio = () => {
 
     useEffect(async () => {
         const response = await axios.get(
-            `http://api.sayeedinfo.com/api/projects`
+            `https://api.sayeedinfo.com/api/projects`
         );
-
         setData(response.data);
-
+        
     }, []);
 
     const settings = {
@@ -53,10 +52,8 @@ const Portfolio = () => {
     };
 
     if (data) {
-
         var projects = data.map(function (projects) {
-
-            var projectImage = "https://sayeedinfo.com/uploads/images/"+projects.image;
+            var projectImage = "https://api.sayeedinfo.com/uploads/images/"+projects.image;
                         
             return (
                 <div key={projects.title} className="cursor-pointer hover:scale-105 transform transition duration-200 ease-out overflow-hidden">
@@ -74,8 +71,6 @@ const Portfolio = () => {
 
 
     return (
-
-
         <section className="py-20" style={{ background: '#f1f1f1' }} id="portfolio">
 
             <div className="container mx-auto">
@@ -85,6 +80,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className="flex flex-col space-x-3 overflow-scroll scrollbar-hide p-6">
+                    {console.log(projects)}
                     <Slider {...settings} >
                         {projects}
                     </Slider>

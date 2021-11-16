@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['sayeedinfo.com'],
+    domains: ['api.sayeedinfo.com'],
   },
   devIndicators: {
     autoPrerender: false,

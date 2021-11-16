@@ -7,18 +7,6 @@ import Footer from '../components/Footer';
 
 const portfolio = ({ projects }) => {
 
-    // const [resumeData, setResumeData] = useState({});
-
-    // useEffect(() => {
-    //     fetch("resumeData.json")
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //             console.log(data);
-    //             setResumeData(data);
-    //         });
-    // }, []);
-
-
     return (
         <div>
             <Head>
@@ -49,7 +37,7 @@ const portfolio = ({ projects }) => {
                                 <div className="relative overflow-hidden">
                                     <div className="h-72 object-cover">
                                         <img 
-                                            src={"https://sayeedinfo.com/uploads/images/"+project.image}
+                                            src={"https://api.sayeedinfo.com/uploads/images/"+project.image}
                                             alt="portfolio" 
                                             className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
                                         />
@@ -77,13 +65,10 @@ const portfolio = ({ projects }) => {
 }
 
 export async function getStaticProps(context) {
-
     const response = await axios.get(
         `http://api.sayeedinfo.com/api/projects`
     );
-
     const projects = response.data;
-
     return {
         props: { projects: projects },
     }
