@@ -9,17 +9,17 @@
     "email": "itplusplus0@gmail.com",
     "phone": "+88 01922644262",
     "address": {
-      "street": "273/A, Mohammadia Housing",
+      "street": "90, Gulshan-2",
       "city": "Dhaka",
       "state": "Bangladesh",
-      "zip": "1207"
+      "zip": "1212"
     },
     "website": "https://www.papareact.com/course",
     "resumedownload": "http://papareact.com",
     "social": [
       {
         "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
+        "url": "https://www.facebook.com/Sayeed.sangha.3",
         "className": "faFacebook"
       },
       {
@@ -129,27 +129,27 @@
   "testimonials": {
     "testimonials": [
       {
-        "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
+        "text": "Sayeed is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
         "user": "Mo Ismail",
         "deg":"CEO - Lynck"
       },
       {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "text": "Learning with Sayeed has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
         "user": "Adam Curtis",
         "deg":"CEO - Lynck"
       },
       {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "text": "Learning with Sayeed has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
         "user": "Adam Curtis",
         "deg":"CEO - Lynck"
       },
       {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "text": "Learning with Sayeed has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
         "user": "Adam Curtis",
         "deg":"CEO - Lynck"
       },
       {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "text": "Learning with Sayeed has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
         "user": "Adam Curtis",
         "deg":"CEO - Lynck"
       }

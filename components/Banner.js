@@ -3,8 +3,6 @@ import Typewriter from 'typewriter-effect';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import profilePic from '../public/img/pro-bg.jpg';
-import photoImg from '../public/img/photo.png';
 import DownloadButton from "./sections/DownloadButton";
 
 function Banner({ data }) {
@@ -32,26 +30,25 @@ function Banner({ data }) {
             className="min-h-screen flex items-center justify-center px-3"
             id="home"
         >
-        {/* <Image
-            src={profilePic}
-            layout="fill"
-            objectFit="cover" /> */}
 
         <div className="flex flex-col items-center justify-center md:flex-row-reverse md:w-10/12 md:justify-between">
             <div className="w-full md:w-1/4">
-                <LazyLoadImage
+                {/* <LazyLoadImage
                     src="https://api.sayeedinfo.com/uploads/images/sayeed1.png"
                     alt="profile"
                     className={`w-1/2 lg:w-full mx-auto rounded-full items-center justify-center bg-white border border-gray-100 shadow-sm`}
                     effect="blur"
                     placeholderSrc=""
-                />
-                {/* <div className="relative w-3/12 h-100 overflow-hidden">
+                    threshold="100"
+                /> */}
+                <div className="relative w-8/12 lg:w-full h-100 overflow-hidden mx-auto">
                 <Image
-                    src={photoImg}
-                    layout="fill"
-                    objectFit="contain"/> 
-                </div> */}
+                    src="https://api.sayeedinfo.com/uploads/images/sayeed1.png"
+                    width={500}
+                    height={500}
+                    className={`object-cover h-48 w-full rounded-full bg-white items-center justify-center border border-gray-100 shadow-sm`}
+                    /> 
+                </div>
             </div>
 
             <div className="font-dosis w-full md:w-3/4 md:text-left">
@@ -59,7 +56,7 @@ function Banner({ data }) {
                 <h2 className="responsive-headline text-white text-3xl lg:text-6xl flex justify-center lg:justify-start">
                      <Typewriter
                         options={{
-                            strings: ['Full Stack Developer.','React/React Native.', 'Mern Stack Dev.'],
+                            strings: ['Full Stack Developer.','React/Next.js', 'React Native'],
                             autoStart: true,
                             loop: true,
                         }}

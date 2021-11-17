@@ -79,7 +79,7 @@ const Portfolio = () => {
                     <p>Check Out Some of My Works.</p>
                 </div>
 
-                <div className="flex flex-col space-x-3 overflow-scroll scrollbar-hide p-6">
+                <div className="flex flex-col space-x-3 scrollbar-hide p-6">
                     {console.log(projects)}
                     <Slider {...settings} >
                         {projects}

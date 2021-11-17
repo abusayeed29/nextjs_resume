@@ -19,7 +19,7 @@ function ContactForm() {
     
     const onSubmitForm = (data) => {
 
-        axios.post(`http://127.0.0.1:8001/api/contact`, data, config)
+        axios.post(`https://api.sayeedinfo.com/api/contact`, data, config)
             .then((response) => {
 
                 if(response.data.status===200){

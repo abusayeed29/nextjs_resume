@@ -4,7 +4,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 const DownloadButton = () => {
 
     const downloadFile = () => {
-        window.location.href = "https:/sayeedinfo.com/uploads/sayeed-.cv.pdf"
+        window.location.href = "https:/api.sayeedinfo.com/uploads/sayeed-.cv.pdf"
     }
 
     return (
